@@ -1,0 +1,24 @@
+#sidePanel {
+  background: #fff;
+  box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  overflow: scroll;
+  transform: translate(100%);
+
+  animation-iteration-count: 1;
+  animation: slideIn 1s normal forwards ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}

@@ -1,3 +1,9 @@
-<h1>
+<h1 {{action "toggleSidePanel"}}>
     {{yield}}
 </h1>
+
+{{#if this.sidePanelActive}}
+<div id="sidePanel">
+    <h2>Panel</h2>
+</div>
+{{/if}}

@@ -1,13 +1,12 @@
 {{yield paginatedPosts}}
 
 <div>
-    Pagination
     {{#if canShowPrevious}}
     <span {{action "goToPrevious"}}>&lt;</span>
     {{/if}}
 
-    {{#each postPages as |page|}}
-    <span {{action "pageClicked" pageNumber}}>{{pageNumber}}</span>
+    {{#each pageNumbers as |pageNumber|}}
+    <span {{action "goToPage" pageNumber}}>{{pageNumber}}</span>
     {{/each}}
 
     {{#if canShowNext}}
