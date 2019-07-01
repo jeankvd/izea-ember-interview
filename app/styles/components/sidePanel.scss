@@ -1,6 +1,8 @@
 #sidePanel {
   background: #fff;
   box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-sizing: border-box;
 
   position: absolute;
   right: 0;
@@ -11,7 +13,17 @@
   transform: translate(100%);
 
   animation-iteration-count: 1;
-  animation: slideIn 1s normal forwards ease-in-out;
+  animation: slideIn .4s normal forwards ease-in-out;
+  color: black;
+}
+
+.panel-is-sliding-out #sidePanel {
+  animation: slideOut .4s normal forwards ease-in-out;
+}
+
+/* TODO, add overlay so this is not necessary */
+.side-panel-active h1 {
+//   pointer-events: none;
 }
 
 @keyframes slideIn {
@@ -20,5 +32,14 @@
   }
   to {
     transform: translate(0%);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translate(0%);
+  }
+  to {
+    transform: translate(100%);
   }
 }
