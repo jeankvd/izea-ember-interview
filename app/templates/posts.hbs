@@ -1,0 +1,9 @@
+{{outlet}}
+<h1>Posts</h1>
+<div>
+    {{#post-pagination size=5 source=model as |posts|}}
+    {{#each posts as |post|}}
+    <Post>{{post.id}}</Post>
+    {{/each}}
+    {{/post-pagination}}
+</div>
