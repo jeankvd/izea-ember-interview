@@ -6,7 +6,7 @@ Ember.js app that shows a list of paginated posts. You can see it in action [her
 
 ## Routes
 
-This app only contains the `/posts` route where the application takes place.
+This app only contains the `/posts` route where the application takes place. It uses `ember-ajax` to fetch data.
 
 ## Components
 
@@ -18,6 +18,12 @@ A component that handles the toggling of the side panel.
 
 #### side-panel.js
 Side Panel component that makes a network call to the API to display user. I would've preferred to use query params for this. If there is a more "ember" way to do this please let me know
+
+##Style
+I wrote the styles for this application with `SCSS` and `ember-cli-sass`
+
+##Tests
+I wrote `posts-test.js`, an acceptance test that uses `mirage` and `ember-test-selectors` to test the app functinoality
 
 ## Challenges
 
