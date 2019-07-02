@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  background: linear-gradient(90deg, #f50374 0%, #972276 100%);
+  background: linear-gradient(90deg, $primaryAccent 0%, $secondaryAccent 100%);
   color: white;
   font-family: sans-serif;
 }
@@ -36,9 +36,9 @@ h1 {
 }
 
 a {
-  color: #f50374;
+  color: $primaryAccent;
   &:hover {
-    color: #972276;
+    color: $secondaryAccent;
   }
 }
 

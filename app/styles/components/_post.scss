@@ -12,17 +12,16 @@
   }
 
   h1 {
-    color: #333;
+    color: $primaryTextColor;
     margin: 0;
     font-size: 1.1rem;
   }
 }
 
 .side-panel-active .post {
-  pointer-events: none;
-  background: #333;
+  background: $primaryTextColor;
 
   h1 {
-    color: white;
+    color: #fff;
   }
 }

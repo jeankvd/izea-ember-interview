@@ -4,6 +4,7 @@
   padding: 15px;
   padding-top: 40px;
   box-sizing: border-box;
+  pointer-events: auto;
 
   position: fixed;
   right: 0;
@@ -15,7 +16,7 @@
 
   animation-iteration-count: 1;
   animation: slideIn 0.4s normal forwards ease-in-out;
-  color: #333;
+  color: $primaryTextColor;
 
   .close {
     position: absolute;
@@ -25,17 +26,17 @@
     border-radius: 4px;
     padding: 0px 5px;
     cursor: pointer;
-    background-color: #f50374;
-    color: white;
+    background-color: $primaryAccent;
+    color: #fff;
 
     &:hover {
-      background-color: #972276;
+      background-color: $secondaryAccent;
     }
   }
 }
 
 #sidePanel .user {
-  border: solid 1px #333;
+  border: solid 1px $primaryTextColor;
   padding: 8px;
   border-radius: 4px;
   box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);

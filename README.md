@@ -1,4 +1,4 @@
-# izea-interview
+# IZEA Project
 
 Ember.js app that shows a list of paginated posts. You can see it in action [here](http://jean-izea.surge.sh/posts).
 
@@ -11,15 +11,12 @@ This app only containse the `/posts` route where the application takes place.
 ## Components
 
 #### post-pagination.js
-
 Responsible for the pagination logic.
 
 #### post.js
-
 Component that handles the toggling of the side panel.
 
 #### side-panel.js
-
 Side Panel component that makes a network call to the API to display user. I would've prefered to use query params for this. If there is a more "ember" way to do this please let me know
 
 ## Challenges
