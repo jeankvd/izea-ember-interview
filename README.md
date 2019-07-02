@@ -19,10 +19,10 @@ A component that handles the toggling of the side panel.
 #### side-panel.js
 Side Panel component that makes a network call to the API to display user. I would've preferred to use query params for this. If there is a more "ember" way to do this please let me know
 
-##Style
+## Styles
 I wrote the styles for this application with `SCSS` and `ember-cli-sass`
 
-##Tests
+## Tests
 I wrote `posts-test.js`, an acceptance test that uses `mirage` and `ember-test-selectors` to test the app functinoality
 
 ## Challenges
