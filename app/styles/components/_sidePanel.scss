@@ -5,12 +5,12 @@
   padding-top: 40px;
   box-sizing: border-box;
 
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 300px;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   transform: translate(100%);
 
   animation-iteration-count: 1;
@@ -43,11 +43,6 @@
 
 .panel-is-sliding-out #sidePanel {
   animation: slideOut 0.4s normal forwards ease-in-out;
-}
-
-/* TODO, add overlay so this is not necessary */
-.side-panel-active h1 {
-  //   pointer-events: none;
 }
 
 @keyframes slideIn {

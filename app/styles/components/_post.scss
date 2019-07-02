@@ -17,3 +17,12 @@
     font-size: 1.1rem;
   }
 }
+
+.side-panel-active .post {
+  pointer-events: none;
+  background: #333;
+
+  h1 {
+    color: white;
+  }
+}

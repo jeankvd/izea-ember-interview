@@ -1,4 +1,14 @@
 /* General Styles */
+html,
+body,
+body > div {
+  height: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(90deg, #f50374 0%, #972276 100%);
   color: white;
@@ -19,6 +29,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container > div {
+    width: 100%;
 }
 
 a {
