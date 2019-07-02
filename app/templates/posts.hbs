@@ -1,12 +1,12 @@
 {{outlet}}
 <div class="container">
-  <h1 {{action "getUserData"}}>Posts</h1>
+  <h1 data-test-title>Posts</h1>
   <div id="postsContainer">
     {{#post-pagination source=model as |posts|}}
 
-    {{#each posts as |post|}}
-    <Post @post={{post}} />
-    {{/each}}
+      {{#each posts as |post|}}
+        <Post data-test-post-container @post={{post}} />
+      {{/each}}
 
     {{/post-pagination}}
   </div>

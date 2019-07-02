@@ -1,4 +1,5 @@
 import Component from "@ember/component";
+import { later } from "@ember/runloop";
 
 export default Component.extend({
   sidePanelActive: false,
@@ -11,11 +12,12 @@ export default Component.extend({
     toggleSidePanelOut() {
       if (this.get("sidePanelActive") && !this.get("panelIsSlidingOut")) {
         this.toggleProperty("panelIsSlidingOut");
+
         /* Setting timeout to allow animation to run */
-        setTimeout(() => {
+        later(() => {
           this.toggleProperty("sidePanelActive");
           this.toggleProperty("panelIsSlidingOut");
-        }, 1000);
+        }, 500);
       }
     }
   }
