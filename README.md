@@ -23,7 +23,7 @@ Side Panel component that makes a network call to the API to display user. I wou
 I wrote the styles for this application with `SCSS` and `ember-cli-sass`
 
 ## Tests
-I wrote `posts-test.js`, an acceptance test that uses `mirage` and `ember-test-selectors` to test the app functinoality
+I wrote `posts-test.js`, an acceptance test that uses `mirage` and `ember-test-selectors` to test the app functionality
 
 ## Challenges
 
