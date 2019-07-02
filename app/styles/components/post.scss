@@ -1,22 +1,19 @@
-.container {
-    max-width: 90vw;
-    width: 800px;
-    margin: 0 auto;
-}
+.post {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 10px 11px -8px #555;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
 
-#postsContainer h1 {
-    background: #fff;
+  &:hover {
+    transform: translate(0, -2px);
+  }
+
+  h1 {
     color: #333;
-    padding: 20px;
-    box-shadow: 0 10px 11px -8px #555;
-    border-radius: 4px;
-    transition: all ease-in-out .2s;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-
-    &:hover {
-        transform: translate(0, -2px);
-    }
+    margin: 0;
+    font-size: 1.1rem;
+  }
 }

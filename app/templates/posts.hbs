@@ -2,12 +2,12 @@
 <div class="container">
   <h1 {{action "getUserData"}}>Posts</h1>
   <div id="postsContainer">
-    {{#post-pagination size=5 source=this.model.posts as |posts|}}
+    {{#post-pagination source=model as |posts|}}
+
     {{#each posts as |post|}}
-    {{!-- {{#link-to "posts" (query-params direction="asc")}} --}}
     <Post @post={{post}} />
-    {{!-- {{/link-to}} --}}
     {{/each}}
+
     {{/post-pagination}}
   </div>
 </div>

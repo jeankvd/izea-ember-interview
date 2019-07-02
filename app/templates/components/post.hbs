@@ -1,10 +1,11 @@
 {{!-- Iterated post --}}
-<h1 {{action "toggleSidePanel"}}>
-    {{post.title}}
-</h1>
+<div class="post" {{action "toggleSidePanel"}}>
+    <h1>
+        {{post.title}}
+    </h1>
+</div>
 
 {{!-- Side Panel --}}
-{{!-- TODO: make this its own component --}}
 {{#if this.sidePanelActive}}
 <SidePanel @post={{post}} @user={{user}} @toggleSidePanelOut={{action "toggleSidePanelOut"}} />
 {{/if}}

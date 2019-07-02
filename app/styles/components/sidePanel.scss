@@ -1,7 +1,8 @@
 #sidePanel {
   background: #fff;
   box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 15px;
+  padding-top: 40px;
   box-sizing: border-box;
 
   position: absolute;
@@ -13,17 +14,40 @@
   transform: translate(100%);
 
   animation-iteration-count: 1;
-  animation: slideIn .4s normal forwards ease-in-out;
-  color: black;
+  animation: slideIn 0.4s normal forwards ease-in-out;
+  color: #333;
+
+  .close {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    padding: 0px 5px;
+    cursor: pointer;
+    background-color: #f50374;
+    color: white;
+
+    &:hover {
+      background-color: #972276;
+    }
+  }
+}
+
+#sidePanel .user {
+  border: solid 1px #333;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .panel-is-sliding-out #sidePanel {
-  animation: slideOut .4s normal forwards ease-in-out;
+  animation: slideOut 0.4s normal forwards ease-in-out;
 }
 
 /* TODO, add overlay so this is not necessary */
 .side-panel-active h1 {
-//   pointer-events: none;
+  //   pointer-events: none;
 }
 
 @keyframes slideIn {

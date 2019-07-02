@@ -4,6 +4,7 @@ import { computed } from "@ember/object";
 export default Component.extend({
   currentPage: 0,
   postsPerPage: 5,
+  classNameBindings: ["canShowPrevious", "canShowNext"],
   numberOfPages: computed("currentPage", function() {
     return this.get("source.length") / this.get("postsPerPage");
   }),
@@ -15,7 +16,7 @@ export default Component.extend({
   pageNumbers: computed("numberOfPages", function() {
     let pages = [];
     for (let i = 0; i < this.get("numberOfPages"); i++) {
-      pages.push(i);
+      pages.push(i + 1);
     }
     return pages;
   }),
@@ -23,7 +24,7 @@ export default Component.extend({
     return this.get("currentPage") > 0;
   }),
   canShowNext: computed("currentPage", function() {
-    return this.get("currentPage") < this.get("numberOfPages");
+    return this.get("currentPage") < this.get("numberOfPages") - 1;
   }),
   actions: {
     goToPrevious() {
@@ -33,7 +34,7 @@ export default Component.extend({
       this.set("currentPage", this.get("currentPage") + 1);
     },
     goToPage(pageNumber) {
-      this.set("currentPage", pageNumber);
+      this.set("currentPage", pageNumber - 1);
     }
   }
 });

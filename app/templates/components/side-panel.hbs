@@ -1,8 +1,20 @@
 <div id="sidePanel">
-  <h2 {{action "toggleSidePanelOut"}}>{{post.title}}</h2>
+  <h2>{{post.title}}</h2>
   <p>{{post.body}}</p>
-  <h2>Written by: {{user.username}} ({{user.name}})</h2>
-  <p>{{user.name}} works at {{user.company.name}} <span>({{user.company.catchPhrase}})</span>. </p>
-  <p>You can reach the author at {{user.phone}} or {{user.email}} and you can read more from them at {{user.website}}
-  </p>
+
+  <div class="user">
+    <h2>Written by: @{{user.username}}</h2>
+    <p><strong>@{{user.username}}</strong> ({{user.name}}) works at <strong>{{user.company.name}}</strong>
+      <strong>({{user.company.catchPhrase}})</strong>.
+    </p>
+    <p>You can reach the author at <a href="tel:{{user.phone}}">{{user.phone}}</a> or <a
+        href="mailto:{{user.email}}">{{user.email}}</a>.
+    </p>
+    <p>To read more from <strong>@{{user.username}}</strong> you can visit <a
+        href="{{user.website}}">{{user.website}}</a></p>
+  </div>
+
+  <span class="close" {{action "toggleSidePanelOut"}}>
+    &times;
+  </span>
 </div>

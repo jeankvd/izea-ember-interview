@@ -5,7 +5,17 @@
     display: inline-block;
     padding: 3px 7px;
     cursor: pointer;
-    box-shadow: 0 10px 11px -8px #555;
+    box-shadow: 0 10px 11px -8px #bbb;
     border-radius: 2px;
+
+    &:hover {
+        background: #27cfc3;
+        color: white;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        color: #ddd;
+    }
   }
 }

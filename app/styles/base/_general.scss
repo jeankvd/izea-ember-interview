@@ -1,7 +1,29 @@
 /* General Styles */
-
 body {
-    background: linear-gradient(90deg,#f50374 0%,#972276 100%);
-    color: white;
-    font-family: sans-serif;
+  background: linear-gradient(90deg, #f50374 0%, #972276 100%);
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 90vw;
+  width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  color: #f50374;
+  &:hover {
+    color: #972276;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: capitalize;
 }

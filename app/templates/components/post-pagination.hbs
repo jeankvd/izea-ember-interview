@@ -3,6 +3,8 @@
 <div id="pagination">
   {{#if canShowPrevious}}
   <span {{action "goToPrevious"}}>&lt;</span>
+  {{else }}
+  <span class="disabled">&lt;</span>
   {{/if}}
 
   {{#each pageNumbers as |pageNumber|}}
@@ -11,5 +13,7 @@
 
   {{#if canShowNext}}
   <span {{action "goToNext" }}>&gt;</span>
+  {{else }}
+  <span class="disabled">&gt;</span>
   {{/if}}
 </div>
