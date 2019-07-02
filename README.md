@@ -6,7 +6,7 @@ Ember.js app that shows a list of paginated posts. You can see it in action [her
 
 ## Routes
 
-This app only containse the `/posts` route where the application takes place.
+This app only contains the `/posts` route where the application takes place.
 
 ## Components
 
@@ -14,10 +14,10 @@ This app only containse the `/posts` route where the application takes place.
 Responsible for the pagination logic.
 
 #### post.js
-Component that handles the toggling of the side panel.
+A component that handles the toggling of the side panel.
 
 #### side-panel.js
-Side Panel component that makes a network call to the API to display user. I would've prefered to use query params for this. If there is a more "ember" way to do this please let me know
+Side Panel component that makes a network call to the API to display user. I would've preferred to use query params for this. If there is a more "ember" way to do this please let me know
 
 ## Challenges
 
@@ -27,5 +27,5 @@ Side Panel component that makes a network call to the API to display user. I wou
 ## Nice Surprises
 
 1. Coming from Vue and React, I like how "batteries included" ember.js is, it feels very robust.
-2. The CLI is _really_ nice to have, specially when starting out.
+2. The CLI is _really_ nice to have, especially when starting out.
 3. I was surprised by Ember's `later()` method that acts as setTimeout but is aware of when it is being run on tests, it felt so nice to just change my `setTimeout` with it and see one of my tests automatically pass
